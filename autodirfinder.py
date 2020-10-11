@@ -9,12 +9,12 @@
 
 import autochecker
 import os
-directory = "C:\\Users\\zachn\\OneDrive\\Desktop\\lab3\\tmp5"
+directory = "C:\\Users\\zachn\\OneDrive\\Documents\\labs\\lab3\\tmp"
 
 os.chdir(directory)
 
 currentlevel = next(os.walk('.'))[1] 
-text_file = open("C:\\Users\\zachn\\OneDrive\\Desktop\\lab3\\tmp5\\result.txt", "w")
+text_file = open("C:\\Users\\zachn\\OneDrive\\Documents\\labs\\lab3\\tmp\\result.txt", "w")
 for x in currentlevel:
     try:
         os.chdir(directory+ "\\{0}\\environment\\lab3".format(x))

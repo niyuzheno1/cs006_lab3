@@ -312,7 +312,7 @@ def automain():
 
     filefound = True
     try: 
-        f = open("lab3-style.css", "r")
+        f = open("lab3_style.css", "r")
         css = f.read()
     except OSError as e:
         filefound = False
@@ -352,7 +352,7 @@ def automain():
             h1 = fdlink(html)
             if 'rel' not in h1 or 'type' not in h1 or 'href' not in h1:
                 continue
-            if h1['rel'] == 'stylesheet' and h1['type'] == 'text/css' and h1['href'] == 'lab3-style.css':
+            if h1['rel'] == 'stylesheet' and h1['type'] == 'text/css' and h1['href'] == 'lab3_style.css':
                 correctnum = correctnum + 1
         except OSError as e:
             print( x + " is not found!")
